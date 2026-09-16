@@ -22,9 +22,16 @@ public class JavaScriptExecutorCode {
 		
 		//using JavaScriptExecutors
 		// for ChromeDriver driver = new ChromeDriver(); we can write JavascriptExecutor js = driver; becasue we are string chromreDriver(child) into JavascriptExecutor(parent), where WebDriver and JavascriptExecutor has no relation so we have to user casting "JavascriptExecutor js = (JavascriptExecutor) driver;"
+		
+		//alternate of sendkeys method
 		JavascriptExecutor js = (JavascriptExecutor) driver;
 		js.executeScript("arguments[0].setAttribute('value','Anil kumar')",inputbox); // this will send the value = Anil kumar in to the inputbox field 
-
+		
+		//click on element using JS
+		WebElement radio = driver.findElement(By.id("male"));
+		js.executeScript("arguments[0].click()", radio);
+	
+	
 	}
 
 }
