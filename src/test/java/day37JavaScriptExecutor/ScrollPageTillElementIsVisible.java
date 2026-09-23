@@ -25,12 +25,12 @@ public class ScrollPageTillElementIsVisible {
 		System.out.println(js.executeScript("return window.pageYOffset;"));
 		
 		//scroll till end of the page
-		js.executeScript("window.scrollBy(0,document.body.scrollHeight)");
+		js.executeScript("window.scrollBy(0,document.body.scrollHeight)"); //scrollWidth for scroll to top
 		System.out.println(js.executeScript("return window.pageYOffset;"));
 		
 		//scroll to top/initial of the page
 		Thread.sleep(5000);
-		js.executeScript("window.scrollBy(0,-document.body.scrollHeight)");
+		js.executeScript("window.scrollBy(0,-document.body.scrollHeight)"); // or document.body.scrollWidth
 
 	}
 
