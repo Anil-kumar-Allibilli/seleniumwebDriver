@@ -40,9 +40,7 @@ public class HeadLessTesting {
 			else
 			{
 				System.out.println("file not uploaded");
-			}
-
-			
+			}			
 			//multiple files upload 
 			String file1 = "C:\\Users\\User\\Desktop\\Selenium\\Selenium notes\\Selenium Classes and method formats.docx";
 			String file2 = "C:\\Users\\User\\Desktop\\Selenium\\Selenium notes\\Selenium project Framework.docx";
