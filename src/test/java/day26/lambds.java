@@ -24,7 +24,7 @@ class check implements lambds
 
 
 
-// in above code we have only one method then why to have differenct class gain. then we can cna create same class in main class
+// in above code we have only one method then why to have differenct class again. then we can cna create same class in main class
 
 class Demo
 {

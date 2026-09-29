@@ -41,7 +41,7 @@ public class BrokenLinks {
 			//hit url to server
 			try
 			{
-				URL linkurl = new URL(hrefvalue); //converted http value to string to URL format
+				URL linkurl = new URL(hrefvalue); //converted http value from string to URL format
 				HttpURLConnection con = (HttpURLConnection) linkurl.openConnection(); //open connection to server
 				con.connect(); //connect to server and send request to server
 				int responcecode = con.getResponseCode();
