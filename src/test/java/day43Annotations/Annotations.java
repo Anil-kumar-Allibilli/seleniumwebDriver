@@ -12,6 +12,21 @@ import org.testng.annotations.Test;
   5) Adv search -----> @Test (this are the main actions we do)
   6) log out 
  */
+
+
+/*
+ 1. Read testng.xml
+2. Pick first class from xml
+3. Execute that class completely
+   - BeforeClass
+   - BeforeMethod
+   - Test methods (priority/dependency order)
+   - AfterMethod
+   - AfterClass
+4. Pick next class from xml
+5. Execute that class completely
+6. Continue until all classes are finished
+ */
 public class Annotations 
 {
 	@BeforeMethod
