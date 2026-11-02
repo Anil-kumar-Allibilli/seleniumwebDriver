@@ -12,7 +12,7 @@ public class DropdownHandling {
 
 	public static void main(String[] args) 
 	{
-		//ther eare 3 types in dropdown selection 
+		//there are 3 types in dropdown selection 
 		//select by visible text
 		//select by value
 		//select by index
@@ -23,7 +23,7 @@ public class DropdownHandling {
 		WebElement countryDropdown = driver.findElement(By.xpath("//select[@id='country']"));
 		Select selectdropdown = new Select(countryDropdown);
 		selectdropdown.selectByVisibleText("France"); //select with text in side in dropdown
-		selectdropdown.selectByValue("uk"); //select byt values tag(attribute) in dropdown 
+		selectdropdown.selectByValue("uk"); //select by values tag(attribute) in dropdown 
 		selectdropdown.selectByIndex(5); //selects by index
 		
 		//capture all the option form the dropdown, getOption returns all the option from the dropdown

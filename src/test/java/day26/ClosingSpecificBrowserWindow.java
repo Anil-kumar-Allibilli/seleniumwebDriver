@@ -13,7 +13,7 @@ public class ClosingSpecificBrowserWindow {
 	{
 		
 		WebDriver driver = new ChromeDriver();
-		driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(5000));
+		driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(5));
 		//get url - Opens the webpage which was given
 		driver.get("https://opensource-demo.orangehrmlive.com/web/index.php/auth/login");
 		driver.manage().window().maximize();

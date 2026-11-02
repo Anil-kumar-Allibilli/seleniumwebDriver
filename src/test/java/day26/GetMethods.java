@@ -27,7 +27,7 @@ public class GetMethods {
 		//getCurrentURL
 		String currentURL = driver.getCurrentUrl();
 		System.out.println(currentURL);
-		//getPrageSource - returns the source code of the page
+		//getPageSource - returns the source code of the page
 		//String sourceCode = driver.getPageSource();
 		//System.out.println(sourceCode);
 		//getWindowHand
@@ -47,16 +47,16 @@ public class GetMethods {
 		//switch window
 		driver.switchTo().window(childRILID); // window switched from parent to child
 		System.out.println(driver.getTitle());
-		for(String windowhanr:gf)
+		for(String windowhand:gf)
 		{
-			String browserTitle = driver.switchTo().window(windowhanr).getTitle();//getTitle will get the title of the brower which was opened
+			String browserTitle = driver.switchTo().window(windowhand).getTitle();//getTitle will get the title of the brower which was opened
 			System.out.println(browserTitle);
 			if(browserTitle.equals("OrangeHRM"))
 			{
 				System.out.println(driver.getCurrentUrl());
 				//driver.close(); /closed the currect opened Ul
 			}
-			System.out.println(windowhanr);
+			System.out.println(windowhand);
 			
 		}
 		

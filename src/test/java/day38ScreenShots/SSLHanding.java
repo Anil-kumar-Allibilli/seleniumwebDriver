@@ -6,11 +6,11 @@ import org.openqa.selenium.chrome.ChromeOptions;
 
 public class SSLHanding {
 
-	//SSL certificates means, some websites have security issue which can not open throgh manually/automation for this we need to handle SSL
+	//SSL certificates means, some websites have security issue which can not open through manually/automation for this we need to handle SSL
 	public static void main(String[] args) 
 	{
 		ChromeOptions options = new ChromeOptions();
-		options.setAcceptInsecureCerts(true); // accepts SSL certificated of the wenpage
+		options.setAcceptInsecureCerts(true); // accepts SSL certificated of the web page
 		
 		WebDriver driver = new ChromeDriver(options);
 		driver.get("https://expired.badssl.com");

@@ -16,13 +16,11 @@ public class EnableExtensionsAtRuntime {
 		
 		ChromeOptions options = new ChromeOptions(); 
 		
-		//1) download CRX downaded extension
-		//2) download any extension, in extention Right click and click on download extention
+		//1) download CRX file extension (used to get CRX file of any extension)
+		//2) download any extension, in extension Right click and click on download extension
 		//3) save the file and give the path of that file 
 		File crx = new File("C:\\Users\\User\\Desktop\\Selenium\\Selenium notes\\CRX file of Selector hub.crx");
-		options.addExtensions(crx); // when we want to user any expectios in the autoamation browser can can user it, 
-		
-		
+		options.addExtensions(crx); // when we want to user any extension in the automation browser we can user it, 
 		
 		WebDriver driver = new ChromeDriver(options); 
 		driver.get("https://davidwalsh.name/demo/multiple-file-upload.php");

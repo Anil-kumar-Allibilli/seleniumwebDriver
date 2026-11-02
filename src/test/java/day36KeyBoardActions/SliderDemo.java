@@ -11,7 +11,7 @@ public class SliderDemo {
 
 	public static void main(String[] args) throws InterruptedException 
 	{
-		WebDriver driver =new ChromeDriver();
+		WebDriver driver = new ChromeDriver();
 		driver.get("https://testautomationpractice.blogspot.com/#");
 		driver.manage().window().maximize();
 		driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(5));
@@ -21,7 +21,7 @@ public class SliderDemo {
 		System.out.println("Location of the max slider before moving" +maximum.getLocation()); //
 		
 		WebElement minimum = driver.findElement(By.xpath("//div[@id='HTML7']//span[1]"));
-		System.out.println("Location of the min slider before moving" +minimum.getLocation()); //gets the location of the (x,y) location get.Location().getX() or getY();
+		System.out.println("Location of the min slider before moving" +minimum.getLocation()); //gets the location of the (x,y) location getLocation().getX() or getY();
 		
 		Actions action = new Actions(driver);
 		action.dragAndDropBy(maximum, 95, 0).perform(); //deanAndDropBy(Element,X,Y)

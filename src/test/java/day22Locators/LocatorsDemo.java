@@ -30,13 +30,12 @@ public class LocatorsDemo
 		//l.findElement(By.partialLinkText("Noise")).click(); 
 		
 		//Tag and class name, user to get a group of elements
-		//class anme
+		//class name
 		List<WebElement> headerLink = driver.findElements(By.className("_1XjE3T"));// it returns list of web Elements, so we need list<WebElement> to store the results
 		System.out.println("Total number of Top Offers: "+headerLink.size()); //get count of the class
 		//Tag name
 		List<WebElement> spanTag = driver.findElements(By.tagName("span"));
 		System.out.println("Total number of span tags: "+spanTag.size());
-
 		driver.close();
 	}
 }

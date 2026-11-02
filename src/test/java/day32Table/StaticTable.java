@@ -23,7 +23,7 @@ public class StaticTable {
 		String bookname = driver.findElement(By.xpath("//table[@name=\"BookTable\"]//tr[5]/td[1]")).getText();
 		System.out.println(bookname);
 		
-		//find numerr of columns
+		//find number of columns
 		int col = driver.findElements(By.xpath("//table[@name=\"BookTable\"]//th")).size();
 		System.out.println("number of column: " +col);
 		

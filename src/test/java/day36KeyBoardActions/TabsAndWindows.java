@@ -14,11 +14,11 @@ public class TabsAndWindows {
 		driver.manage().window().maximize();
 		
 		//WindowType.TAB - opens new tab
-		//driver.switchTo().newWindow(WindowType.TAB); //it will switch and open new window
+		driver.switchTo().newWindow(WindowType.TAB); //it will switch and open new window
 		
 		//WindowType.WINDOW - opens new window
-		driver.switchTo().newWindow(WindowType.WINDOW); //it will open new window 
-		driver.get("https://opensource-demo.orangehrmlive.com/web/index.php/auth/login");
+//		driver.switchTo().newWindow(WindowType.WINDOW); //it will open new window 
+//		driver.get("https://opensource-demo.orangehrmlive.com/web/index.php/auth/login");
 
 	}
 

@@ -25,7 +25,7 @@ public class JavaScriptExecutorCode {
 		
 		//alternate of sendkeys method
 		JavascriptExecutor js = (JavascriptExecutor) driver;
-		js.executeScript("arguments[0].setAttribute('value','Anil kumar')",inputbox); // this will send the value = Anil kumar in to the inputbox field 
+		js.executeScript("arguments[0].setAttribute('value','Anil kumar')",inputbox); // this will send the value = Anil kumar in to the input box field 
 		
 		//click on element using JS
 		WebElement radio = driver.findElement(By.id("male"));

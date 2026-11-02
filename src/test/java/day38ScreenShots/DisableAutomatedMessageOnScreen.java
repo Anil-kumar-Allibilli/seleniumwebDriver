@@ -13,7 +13,7 @@ public class DisableAutomatedMessageOnScreen {
 	{
 		//when we open browser through automation we will see a message that says "chrome is been controlled by automation test software" if you dont want to see that mesasge we can do this
 			ChromeOptions options = new ChromeOptions(); 
-			options.setExperimentalOption("excludeSwitches", new String[] {"enable-automation"}); // diable chrome is been controllded option from chrome
+			options.setExperimentalOption("excludeSwitches", new String[] {"enable-automation"}); // disable chrome is been controlled option from chrome
 			
 			
 			WebDriver driver = new ChromeDriver(options); 

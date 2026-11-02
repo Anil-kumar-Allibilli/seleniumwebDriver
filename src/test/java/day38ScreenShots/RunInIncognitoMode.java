@@ -14,7 +14,6 @@ public class RunInIncognitoMode {
 		ChromeOptions options = new ChromeOptions(); 
 		options.addArguments("--incognito"); // user to run test in incognito mode
 		
-		
 		WebDriver driver = new ChromeDriver(options); 
 		driver.get("https://davidwalsh.name/demo/multiple-file-upload.php");
 		driver.manage().window().maximize();
