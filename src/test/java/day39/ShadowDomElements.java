@@ -11,7 +11,7 @@ public class ShadowDomElements {
 
 	
 	//xpath cant hangle shadow DOMs, we can only use cssSelector, we need to use selector hub to get the cssSelector
-	//else we can write out code, first we need to fins th shadow host and save the variable and using the variable get shadow root and using it get the shadow elements
+	//else we can write out code, first we need to finds the shadow host and save the variable and using the variable get shadow root and using it get the shadow elements
 	public static void main(String[] args) throws InterruptedException 
 	{
 		WebDriver driver = new ChromeDriver();
@@ -23,6 +23,7 @@ public class ShadowDomElements {
 		//This Element is inside single shadow DOM.
 		//String cssSelectorForHost1 = "#shadow_host";
 		//Thread.sleep(1000);
+		//you will get next 3 lines from selector hub, copy it and paste
 		SearchContext shadow = driver.findElement(By.cssSelector("#shadow_host")).getShadowRoot();
 		Thread.sleep(1000);
 		shadow.findElement(By.cssSelector("input[type='text']")).sendKeys("Welcome to Shadow DOM");
