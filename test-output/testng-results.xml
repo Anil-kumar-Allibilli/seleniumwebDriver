@@ -1,73 +1,30 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="5" passed="4" failed="1" skipped="0">
+<testng-results ignored="5" total="8" passed="3" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2026-11-17T06:17:38 IST" name="Default suite" finished-at="2026-11-17T06:17:38 IST" duration-ms="66">
+  <suite started-at="2026-11-20T06:23:24 IST" name="groupSuite" finished-at="2026-11-20T06:23:24 IST" duration-ms="81">
     <groups>
+      <group name="sanity">
+        <method signature="GroypsLoginTests.loginByEmail()[pri:1, instance:day44Dependency.GroypsLoginTests@b62d79]" name="loginByEmail" class="day44Dependency.GroypsLoginTests"/>
+        <method signature="GroypsLoginTests.loginByFaceBook()[pri:2, instance:day44Dependency.GroypsLoginTests@b62d79]" name="loginByFaceBook" class="day44Dependency.GroypsLoginTests"/>
+        <method signature="GroypsLoginTests.loginByTwitter()[pri:3, instance:day44Dependency.GroypsLoginTests@b62d79]" name="loginByTwitter" class="day44Dependency.GroypsLoginTests"/>
+      </group> <!-- sanity -->
     </groups>
-    <test started-at="2026-11-17T06:17:38 IST" name="Default test" finished-at="2026-11-17T06:17:38 IST" duration-ms="66">
-      <class name="day44Dependency.DependencyMethods">
-        <test-method signature="openapp()[pri:1, instance:day44Dependency.DependencyMethods@1ba9117e]" started-at="2026-11-17T06:17:38 IST" name="openapp" finished-at="2026-11-17T06:17:38 IST" duration-ms="14" status="FAIL">
-          <exception class="java.lang.AssertionError">
-            <message>
-              <![CDATA[expected [true] but found [false]]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[java.lang.AssertionError: expected [true] but found [false]
-at org.testng.Assert.fail(Assert.java:111)
-at org.testng.Assert.failNotEquals(Assert.java:1590)
-at org.testng.Assert.assertTrue(Assert.java:57)
-at org.testng.Assert.assertTrue(Assert.java:67)
-at day44Dependency.DependencyMethods.openapp(DependencyMethods.java:12)
-at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
-at java.base/java.lang.reflect.Method.invoke(Method.java:580)
-at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
-at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:687)
-at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
-at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
-at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:995)
-at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
-at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
-at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
-at java.base/java.util.ArrayList.forEach(ArrayList.java:1597)
-at org.testng.TestRunner.privateRun(TestRunner.java:741)
-at org.testng.TestRunner.run(TestRunner.java:616)
-at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
-at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
-at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
-at org.testng.SuiteRunner.run(SuiteRunner.java:312)
-at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
-at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
-at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
-at org.testng.TestNG.runSuites(TestNG.java:1112)
-at org.testng.TestNG.run(TestNG.java:1079)
-at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
-at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
-at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
-]]>
-            </full-stacktrace>
-          </exception> <!-- java.lang.AssertionError -->
+    <test started-at="2026-11-20T06:23:24 IST" name="groupTest" finished-at="2026-11-20T06:23:24 IST" duration-ms="81">
+      <class name="day44Dependency.GroypsLoginTests">
+        <test-method signature="loginByEmail()[pri:1, instance:day44Dependency.GroypsLoginTests@b62d79]" started-at="2026-11-20T06:23:24 IST" name="loginByEmail" finished-at="2026-11-20T06:23:24 IST" duration-ms="13" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- openapp -->
-        <test-method signature="login()[pri:2, instance:day44Dependency.DependencyMethods@1ba9117e]" started-at="2026-11-17T06:17:38 IST" name="login" finished-at="2026-11-17T06:17:38 IST" duration-ms="1" status="PASS">
+        </test-method> <!-- loginByEmail -->
+        <test-method signature="loginByFaceBook()[pri:2, instance:day44Dependency.GroypsLoginTests@b62d79]" started-at="2026-11-20T06:23:24 IST" name="loginByFaceBook" finished-at="2026-11-20T06:23:24 IST" duration-ms="1" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- login -->
-        <test-method signature="search()[pri:3, instance:day44Dependency.DependencyMethods@1ba9117e]" started-at="2026-11-17T06:17:38 IST" name="search" finished-at="2026-11-17T06:17:38 IST" duration-ms="1" status="PASS">
+        </test-method> <!-- loginByFaceBook -->
+        <test-method signature="loginByTwitter()[pri:3, instance:day44Dependency.GroypsLoginTests@b62d79]" started-at="2026-11-20T06:23:24 IST" name="loginByTwitter" finished-at="2026-11-20T06:23:24 IST" duration-ms="4" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- search -->
-        <test-method signature="advSearch()[pri:4, instance:day44Dependency.DependencyMethods@1ba9117e]" started-at="2026-11-17T06:17:38 IST" name="advSearch" finished-at="2026-11-17T06:17:38 IST" duration-ms="1" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- advSearch -->
-        <test-method signature="logout()[pri:5, instance:day44Dependency.DependencyMethods@1ba9117e]" started-at="2026-11-17T06:17:38 IST" name="logout" finished-at="2026-11-17T06:17:38 IST" duration-ms="1" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- logout -->
-      </class> <!-- day44Dependency.DependencyMethods -->
-    </test> <!-- Default test -->
-  </suite> <!-- Default suite -->
+        </test-method> <!-- loginByTwitter -->
+      </class> <!-- day44Dependency.GroypsLoginTests -->
+    </test> <!-- groupTest -->
+  </suite> <!-- groupSuite -->
 </testng-results>

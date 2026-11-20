@@ -5,6 +5,10 @@
     <classes>
       <class name="day44Dependency.DependencyMethods">
         <methods>
+          <include name="advSearch"/>
+          <include name="search"/>
+          <include name="login"/>
+          <include name="logout"/>
           <include name="openapp"/>
         </methods>
       </class> <!-- day44Dependency.DependencyMethods -->
