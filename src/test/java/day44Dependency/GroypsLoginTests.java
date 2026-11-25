@@ -4,6 +4,15 @@ import org.testng.annotations.Test;
 
 public class GroypsLoginTests 
 
+
+/*
+ <groups>
+			<run>
+				<include name="sanity"/>
+				<exclude name="Regression"></exclude>
+			</run>
+		</groups>
+ */
 {
 	@Test(priority=1,groups= {"sanity"})
 	void loginByEmail()
