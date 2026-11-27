@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite thread-count="5" name="Suite" parallel="tests"> <!-- here parallel is for parallel execution, tests is like test level execution, if we write parallel in test tag then it will execute in class level then it should be parallel="classes" -->
+  <test name="chromeTest">
+  	<parameter name="browser" value="chrome"></parameter>
+    <classes>
+      <class name="day45Parameterization.XmlParemTest"/>
+    </classes>
+  </test> <!-- Test -->
+  
+  <test name="EdgeTet"> <!-- test thread-count="5" name="EdgeTet" original, we moved thread-count to suite level for parallel execution -->
+  	<parameter name="browser" value="edge"></parameter>
+    <classes>
+      <class name="day45Parameterization.XmlParemTest"/>
+    </classes>
+  </test> <!-- Test -->
+  
+  <test name="Firefixtest">
+  	<parameter name="browser" value="firefox"></parameter>
+    <classes>
+      <class name="day45Parameterization.XmlParemTest"/>
+    </classes>
+  </test> <!-- Test -->
+</suite> <!-- Suite -->
+
+<!-- thread-count="5" is like creating threads at run time, we remove it in test tag level and add in  suite level, thread count will give the threst so that we can execute multiple threads at a time, we can use 2-5 thread max-->

@@ -28,17 +28,19 @@ public class DataProviders
 		driver.manage().window().maximize();
 		driver.findElement(By.xpath("//input[@id='input-email']")).sendKeys(email);
 		driver.findElement(By.xpath("//input[@id='input-password']")).sendKeys(psw);
-		//driver.findElement(By.xpath("//input[@value='Login']")).click();
-		driver.findElement(By.xpath("//div[contains(text(),'Warning: No match for E-Mail Address and/or Password.')]")).isDisplayed();
-		String msg = driver.findElement(By.xpath("//div[contains(text(),'Warning: No match for E-Mail Address and/or Password.')]")).getText();
-		if(msg.equals("Warning: No match for E-Mail Address and/or Password."))
+		driver.findElement(By.xpath("//input[@value='Login']")).click();
+		boolean status = driver.findElement(By.xpath("//span[normalize-space()='My Account']")).isDisplayed();
+		if(status = true)
 		{
-			Assert.assertTrue(true);
+			driver.findElement(By.xpath("//span[normalize-space()='My Account']")).click();
+			driver.findElement(By.xpath("//ul[@class='dropdown-menu dropdown-menu-right']//a[normalize-space()='Logout']")).click();
+			Assert.assertTrue(status);
 		}
 		else
 		{
 			Assert.fail();
 		}
+
 	}
 	
 	@AfterClass
@@ -47,7 +49,7 @@ public class DataProviders
 		System.out.println("we can logg out");
 	}
 	
-	@DataProvider(name="dp")   // Object[][] can hold any type of data so better to user objects
+	@DataProvider(name="dp",indices = {0,4}) // Object[][] can hold any type of data so better to user objects, indices is used to select which data to be passed as parameters
 	Object[][] loginData()
 	{
 		Object idPassword[][] =
